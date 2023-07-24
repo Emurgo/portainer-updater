@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gen-client": "swagger-typescript-api -p portainer.yaml -o src/portainer -n api.ts --axios --api-class-name PortainerApi --extract-response-body --extract-request-params --extract-request-body --extract-response-error --patch"
+    "gen-client": "swagger-typescript-api -p portainer.yaml -o src/portainer -n api.ts --axios --api-class-name PortainerApi --extract-response-body --extract-request-params --extract-request-body --extract-response-error --patch",
+    "update-portainer": "ts-node src/index.ts"
   },
   "author": "",
   "license": "ISC",
